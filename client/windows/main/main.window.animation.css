@@ -1,0 +1,6 @@
+.animation-hide-search-bar {
+  visibility: hidden;
+}
+.animation-show-search-bar {
+  visibility: visible;
+}
