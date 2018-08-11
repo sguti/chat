@@ -1,0 +1,7 @@
+each message in messages
+    if(message.owner == userId)
+        div(class='message message-self')
+            span.message-content=message.content
+    else
+        div(class='message message-other')
+            span.message-content=message.content

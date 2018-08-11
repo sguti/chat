@@ -1,0 +1,8 @@
+div.contact-list
+    each contact in contacts
+        div.contact-list-item(onClick="startChatSession('"+contact.id+"')")
+            div.avatar
+                i(class="fa fa-user-circle" aria-hidden="true")
+            div.user-info(data=contact.id)=contact.displayName
+            div.user-status
+                i(class="fa fa-circle user-"+contact.status aria-hidden="true")

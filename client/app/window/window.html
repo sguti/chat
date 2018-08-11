@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./window.css">
+    <link rel="stylesheet" href="./window.animation.css">
+</head>
+
+<body>
+    <div id="__view_notification" class="notification">
+        <div class="message">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <span>Sudip wants to share screen</span>
+        </div>
+        <div class="controls">
+            <i class="fa fa-check-square accept" aria-hidden="true"></i>
+            <i class="fa fa-times-circle reject"  aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="layout">
+        <div id="__view_header" class="header">
+        </div>
+        <div id="__view_active-chats" class="active-chats no-active-chats">
+        </div>
+        <div id="__view_content" class="content">
+        </div>
+    </div>
+</body>
+<script src="./window.event.handler.js"></script>
+<script src="./window.renderer.js"></script>
+
+</html>

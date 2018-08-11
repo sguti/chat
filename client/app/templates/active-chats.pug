@@ -1,0 +1,6 @@
+each session in activeChatSessions
+    div.active-chat-user
+        span.unread-count-badge(count=session.unreadMessageCount)
+        div.avatar
+            i(class="fa fa-user-circle user-"+session.user.status+" fa-2x" aria-hidden="true")                
+        div.user-name=session.user.displayName

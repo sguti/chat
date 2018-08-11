@@ -75,11 +75,16 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
+.layout .no-active-chats {
+  flex: 0;
+  border-top: 0px;
+}
 .layout .active-chats .active-chat-user {
   padding: 0px 6px;
 }
 .layout .active-chats .active-chat-user .user-name {
   font-size: xx-small;
+  text-align: center;
 }
 .layout .active-chats .active-chat-user .unread-count-badge {
   position: relative;
@@ -110,7 +115,7 @@ i {
   cursor: pointer;
 }
 
-.user-active {
+.user-online {
   color: #27c749;
 }
 .user-away {
@@ -128,7 +133,7 @@ i {
 }
 .chat-window-header {
   flex: 1.2;
-  background-color: #043338;
+  background-color: #041938;
   color: silver;
   display: flex;
   align-items: center;
@@ -142,8 +147,10 @@ i {
   flex: 12;
 }
 .chat-window-header .user-status {
-  flex: 1;
+  flex: 3;
   font-size: x-small;
+  display: flex;
+  justify-content: space-evenly;
 }
 .chat-window-body {
   flex: 10;
@@ -178,9 +185,9 @@ i {
 }
 .chat-window-body .message {
   padding: 0px 10px;
+  display: flex;
 }
 .chat-window-body .message-self {
-  display: flex;
   justify-content: flex-start;
 }
 .chat-window-body .message-self .message-content {
@@ -197,7 +204,10 @@ i {
   display: flex;
   justify-content: flex-end;
 }
-
+.chat-window-body .message .message-content {
+  max-width: 250px;
+  overflow-wrap: break-word;
+}
 .contact-list {
   flex: 1;
   display: flex;
@@ -229,4 +239,35 @@ i {
 .contact-list-item .user-status {
   flex: 1;
   font-size: x-small;
+}
+.notification {
+  position: absolute;
+  top: 0px;
+  color: white;
+  background-color: rgba(3, 28, 45, 0.8);
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 65px;
+  border: 1px solid #14e2c6;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.notification .message {
+  padding: 0px 4px;
+}
+
+.notification .controls {
+  display: flex;
+  justify-content: center;
+}
+.notification .controls .accept {
+  color: #52d252;
+  margin-right: 10px;
+}
+.notification .controls .reject {
+  color: red;
+  margin-left: 10px;
 }

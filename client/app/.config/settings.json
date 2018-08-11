@@ -1,0 +1,6 @@
+{
+  "server": {
+    "base": "http://localhost:3000"
+  },
+  "directory": "D:\\Github\\chat\\chat\\client\\temp"
+}

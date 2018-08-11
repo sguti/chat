@@ -1,0 +1,14 @@
+div.chat-window
+    div.chat-window-header
+        div.avatar
+            i(class="fa fa-user-circle fa-2x" aria-hidden="true")
+        div.user-info=user.displayName
+        div.user-status
+            i(class="fa fa-2x fa-desktop" aria-hidden="true")
+            i(class="fa fa-circle user-"+user.status aria-hidden="true")
+    div#__View_chat-window-body.chat-window-body       
+    div.chat-window-editor
+        div.chat-window-editor-input
+            textarea(name="",id="",cols="30",rows="10",placeholder="press Enter to send", onkeyup="onUserInput(event)")
+            div.chat-window-editor-controls
+              
